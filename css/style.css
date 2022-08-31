@@ -1,0 +1,129 @@
+.header-div{
+    background-image: url('../images/background-image.jpg');
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-attachment: fixed;
+}
+.main-logo{
+    max-width: 200px;
+    width: 100%;
+}
+/*navigation div*/
+.navigation-div{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation{
+    max-width: 650px;
+    width: 100%;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.color{
+    font-family: 'Nunito regular';
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+}
+.burger-bar{
+    display: none;
+}
+/*middle div*/
+.middle-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 225px auto 270px;
+}
+.enjoy-text{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Nunito regular';
+    text-align: center;
+    font-weight: 800;
+}
+h1{
+    margin-top: 25px;
+    margin-bottom: 45px;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Old Standard TT';
+    text-align: center;
+}
+/*two small divs*/
+.two-divs{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+}
+.two-small-divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    width: 100%;
+    height: 60px;
+}
+.two-small-divs:hover{
+    cursor: pointer;
+}
+.one{
+    background-color: #c5a880;
+}
+.two{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.smalldivs-text{
+    font-size: 15px;
+    color: white;
+    font-family: 'Nunito regular';
+    font-weight: 600;
+}
+/*bottom div*/
+.bottom-div{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+}
+.divs-five{
+    max-width: 260px;
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divs-five:hover{
+    background-color: #c5a880;
+}
+.chek-h4{
+    color: white;
+    font-size: 14px;
+    font-family: 'Nunito regular';
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.fa-calendar-days{
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 30px;
+}
+
