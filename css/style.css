@@ -90,7 +90,7 @@ h1{
     font-size: 15px;
     color: white;
     font-family: 'Nunito regular';
-    font-weight: 600;
+    font-weight: 500;
 }
 /*bottom div*/
 .bottom-div{
@@ -126,4 +126,95 @@ h1{
     color: rgba(255, 255, 255, 0.4) !important;
     font-size: 30px;
 }
+/*first section*/
+.first-section{
+   padding-top: 1100px;
+}
+.first-section-div{
+    max-width: 1300px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.two-offer-rooms{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.first-offer-room{
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+}
+.first-offer-room:hover{
 
+}
+.small-offer-room{
+    background-color: white;
+    width: 100%;
+    height: 290px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-bed-front{
+    color: #c5a880;
+    font-size: 22px;
+}
+/* icon*/
+
+.h3-room{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Old Standard TT';
+
+}
+.p-room{
+    text-align: center;
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Nunito regular';
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.small-img1{
+    margin-top: 30px;
+    background-image: url(../images/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 230px;
+}
+/*second room small div*/
+.second-offer-room{
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+}
+.small-img2{
+    margin-bottom: 30px;
+    background-image: url(../images/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 230px;
+}
+.room2{
+    margin-top: 60px;
+}
+/*second div, room img*/
+.big-image-div{
+    max-width: 550px;
+    height: 100%;
+}
+.room{
+    width:  100%;
+    height: 100%;
+}
