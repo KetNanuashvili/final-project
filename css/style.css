@@ -195,7 +195,7 @@ h1{
 }
 .small-img1{
     margin-top: 60px;
-    background-image: url(../images/img2.jpg);
+    background-image: url(../images/small-img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -342,4 +342,75 @@ h1{
 /*fourth section*/
 .fourth-section{
     margin-top: 400px;
+}
+.six-room-divs{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.room-div6{
+    box-shadow: 3px 5px 12px black;
+}
+.room-div6:hover{
+    cursor: pointer;
+    transition: all 1s ease;
+    background-color: black;
+}
+/* vers from children*/
+.room-texts-div{
+   border-style: solid;
+   border-color: #c5a880;
+   border-top-width: 2px;
+   transition: all 1s ease;
+}
+.room-div6:hover .room-img6{
+    opacity: 0.5;
+}
+.room-div6:hover .room-texts-div{
+    background-color: black;
+
+}
+.room-img6{
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+.room-texts-div{
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*before div */
+.book-now-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    color: #c5a880;
+    font-size: 30px;
+}
+.book6::before{
+}
+.book6{
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+.room-div6:nth-child(1),
+.room-div6:nth-child(2),
+.room-div6:nth-child(3){
+    margin-bottom: 40px;
 }
