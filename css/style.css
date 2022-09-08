@@ -24,6 +24,7 @@ body{
     color: #c5a880;
     font-family: 'Old Standard TT';
 }
+
 .navigation{
     max-width: 650px;
     width: 100%;
@@ -38,9 +39,24 @@ body{
     letter-spacing: 2px;
     color: #2F4F4F;
     font-weight: 700;
+    position: relative;
 }
 .color:hover{
     color: #c5a880;
+}
+.color::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#2F4F4F;
+}
+.color:hover::after{
+    background-color: #2F4F4F;
+    width: 100%;
+    transition: all 0.5s ease;
 }
 .burger-bar{
     display: none;
@@ -112,10 +128,11 @@ h1{
     transform: scale(1.03);
 }
 .smalldivs-text{
-    font-size: 15px;
+    font-size: 17px;
     color:#2F4F4F;
     font-family: 'Nunito regular';
-    font-weight: 500;
+    font-weight: 700;
+    text-shadow: 3px 3px 7px black;
 }
 .first-section-div{
     padding-top: 800px;
@@ -152,7 +169,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 3px 12px grey;
+    box-shadow: 1px 3px 12px black;
     transition: all 1s ease;
 }
 .small-offer-room:hover{
@@ -192,7 +209,7 @@ h1{
     background-repeat: no-repeat;
     background-position: center center;
     height: 230px;
-    box-shadow: 1px 3px 12px grey;
+    box-shadow: 1px 3px 12px black;
 }
 /*second room small div*/
 .second-offer-room{
@@ -207,7 +224,7 @@ h1{
     background-repeat: no-repeat;
     background-position: center center;
     height: 230px;
-    box-shadow: 1px 3px 12px grey;
+    box-shadow: 1px 3px 12px black;
 }
 .room2{
     margin-top: 60px;
@@ -227,7 +244,7 @@ h1{
 }
 
 .room{
-    box-shadow: 1px 3px 12px grey;
+    box-shadow: 1px 3px 12px black;
     width:  100%;
     height: 100%;
 }
@@ -241,7 +258,7 @@ h1{
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
-    box-shadow: 1px 3px 12px grey;
+    box-shadow: 1px 3px 12px black;
 }
 .book-room-now:hover{
     cursor: pointer;
@@ -400,17 +417,23 @@ h1{
     font-size: 30px;
     text-shadow: 3px 3px 4px gray;
 }
-.book6::before{
+.fa-right-to-bracket{
+    font-size: 20px;
 }
 .book6{
-    color: #222222;
+    color: gray;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 2px solid ;
     padding: 5px 10px;
-    border-radius: 2px;
+    border-radius: 0.1px;
     margin-bottom: 50px;
+    box-shadow: 1px 1px 1px gray;
+    background-color: #c5a880;
+}
+.book6:hover{
+
 }
 .room-div6:nth-child(1),
 .room-div6:nth-child(2),
@@ -466,10 +489,25 @@ h1{
     background-color:#c5a880;
     animation: mymove 2s infinite;
     opacity:0.9;
+    position: relative;
+    z-index: 6;
 }
 @keyframes mymove{
     from { width: 100px; height: 100px; opacity:0.9}
     to {width: 140px; height: 140px; opacity: 0.1;}
+}
+.fa-lightbulb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    animation: door 2s infinite;
+    z-index: 7;
+}
+@keyframes door{
+    from { color: #2F4F4F;opacity: 1;}
+    to {color: #c5a880; opacity: 1;}
 }
 /*sixth section div*/
 .sixth-section-div{
@@ -649,16 +687,30 @@ h1{
     max-width: 290px;
     width: 100%;
     height: 45px;
+    border: none;
+    border-bottom:4px solid #c5a880;
+    background-color: #2F4F4F;
+    font-size: 20px;
+    font-family: 'Old Standard TT';
+    color: #c5a880;
+    font-weight: 500;
 }
-.submit-div{
-    max-width: 100px;
-    width: 100%;
-    height: 45px;
+.input-form:focus{
+    outline:none;
 }
 .submit{
-    max-width: 100px;
-    width: 100%;
-    height: 45px;
+   width: 120px;
+   height: 45px;
+   background-color: #c5a880;
+   border: none;
+   box-shadow: 2px 2px 4px black;
+   color:#2F4F4F;
+   font-size: 18px;
+   font-family: 'Old Standard TT';
+}
+.submit:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.03);
 }
 /*footer div*/
 .fo0ter-div{
