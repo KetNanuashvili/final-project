@@ -247,6 +247,9 @@
     }
     /* max width 420 px*/
     @media(max-width:420px){
+        .room1{
+            margin-right: 0;
+        }
         .enjoy-text{
             margin-top: 70px;
             font-size: 12px;
@@ -263,7 +266,7 @@
         .two-offer-rooms{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
         }
         .small-img2{
             margin-top: 40px;
