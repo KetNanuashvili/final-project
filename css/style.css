@@ -394,6 +394,7 @@ h1{
    border-top-width: 2px;
    transition: all 1s ease;
 }
+
 .room-div6:hover .room-img6{
     opacity: 0.5;
 }
@@ -551,7 +552,7 @@ h1{
 }
 .grid:hover{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
     background-color: #222222;
     transition: all 0.5s ease;
 }
