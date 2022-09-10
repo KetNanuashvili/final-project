@@ -7,42 +7,45 @@
     <link rel="stylesheet" href="css/recet.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/responsives.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
    <header>
     <div class="header-div">
-        <div class="navigation-div">
-            <!--main-logo-->
-            <a class="mainlogo" href="index.html"> 
-                <h4 class="main-logo">Unwind</h4>
-            </a>
-            <!--navigation-->
-            <nav class="navigation">
-                <ul class="nav-ul">
-                    <li class="nav-li">
-                        <a class="color blue" href="index.html"> HOME</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="color" href="index.html">ABOUT</a>
-                    </l>
-                    <li class="nav-li active2">
-                        <a class="color"  href="index.html"> ROOMS</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="color"  href="index.html">RESTO & BAR</a>
-                    </li>
-                    <li class="nav-li small">
-                        <a class="color"  href="index.html">BLOG</a>
-                    </li>
-                    <li class="nav-li small">
-                        <a class="color"  href="index.html">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="navigation-div" id="header">
+            <div class="navigation-div1">
+                <!--main-logo-->
+                <a class="mainlogo" href="index.html"> 
+                    <h4 class="main-logo">Unwind</h4>
+                </a>
+                <!--navigation-->
+                <nav class="navigation" id="nav">
+                    <ul class="nav-ul">
+                        <li class="nav-li first-li">
+                            <a class="color blue" href="#home"> HOME</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="color" href="#about">ABOUT</a>
+                        </l>
+                        <li class="nav-li active2">
+                            <a class="color"  href="#rooms"> ROOMS</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="color"  href="#resto">RESTO & BAR</a>
+                        </li>
+                        <li class="nav-li small">
+                            <a class="color"  href="#blog">BLOG</a>
+                        </li>
+                        <li class="nav-li small">
+                            <a class="color"  href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <!--burger bar div-->
-            <div class="burger-bar">
+            <div class="burger-bar" id="toggleburger">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
@@ -107,7 +110,7 @@
     </section>
     -->
     <!--first section-->
-    <section class="first-section">
+    <section class="first-section" id="home">
         <div class="first-section-div">
             <div >
                 <div class="top-div6">
@@ -148,7 +151,7 @@
        </div>
     </section>
     <!--second section-->
-    <section class="second-section">
+    <section class="second-section" id="about">
         <div class="second-section-div">
             <div class="top-div">
                 <h6 class="services">UNWIND SERVICES</h6>
@@ -188,7 +191,7 @@
         </div>
     </section>
     <!--fourth section-->
-    <section class="fourth-section">
+    <section class="fourth-section" id="rooms">
         <div class="fourth-section-div">
             <!--top div2-->
             <div class="top-div">
@@ -313,7 +316,7 @@
         </div>
     </section>
     <!--sixth section-->
-    <section class="sixth-section">
+    <section class="sixth-section" id="resto">
         <div class="sixth-section-div">
             <div class="top-div6">
                 <h3 class="services">RESTO & BAR</h3>
@@ -412,7 +415,7 @@
         </div>
     </section>
     <!--section seventh-->
-    <section class="seventh-section">
+    <section class="seventh-section" id="blog">
         <div class="seventh-section-div">
             <div class="top-div6">
                 <h3 class="services">OUR BLOG</h3>
@@ -475,7 +478,7 @@
         </div>
     </section>
     <!--eighth section-->
-    <section class="eighth-section">
+    <section class="eighth-section" id="contact">
         <div class="eighth-div">
             <div class="top-div6">
                 <h3 class="services">OUR BLOG</h3>
@@ -485,18 +488,18 @@
                 <div class="smallform-divs">
                     <div class="form-div">
                         <label for="text"></label>
-                        <input class="input-form active-2" type="text" name="name" id="email" placeholder="Name / Surname">
-                    </div>
-                    <div class="form-div">
-                        <label for="password"></label>
-                        <input class="input-form" type="password" name="password" id="password" placeholder="password">
+                        <input class="input-form active-2" type="text" name="name" id="text" placeholder="Name / Surname">
                     </div>
                     <div class="form-div">
                         <label for="email"></label>
                         <input class="input-form" type="email" name="email" id="email" placeholder="Email">
                     </div>
+                    <div class="form-div">
+                        <label for="password"></label>
+                        <input class="input-form" type="password" name="password" id="password" placeholder="password">
+                    </div>
                     <div class="submit-div">
-                        <button class="submit" type="submit">send</button>
+                        <button class="submit" id="buttonclick" type="submit">send</button>
                     </div>
                 </div>
             </form>     
@@ -511,13 +514,13 @@
                 <p class="footer-paragrap">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 <div class="icons-3div">
                     <div class="fb-icon">
-                        <a href="https://twitter.com/?lang=en"> <i class="fa-brands fa-twitter white-icons"></i></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"> <i class="fa-brands fa-twitter white-icons"></i></a>
                     </div>
                     <div class="fb-icon">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f white-icons"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f white-icons"></i></a>
                     </div>
                     <div class="fb-icon">
-                        <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram white-icons"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram white-icons"></i></a>
                     </div>
                 </div>
             </div>
@@ -603,5 +606,7 @@
             <p class="Copyright-p">Copyright ©2022 All rights reserved | This template is made with by <span class="span-tag">Colorlib</span></p>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

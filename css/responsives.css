@@ -1,0 +1,34 @@
+@media(max-width:768px){
+    /*burger bar */
+    .navigation{
+        display: none;
+    }
+    .burger-bar{
+        display: block;
+        padding-top: 10px;
+    }
+    .nav-ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation-div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation-div.head {
+        background-color: #222222;
+    }
+    .navigation-div1{
+        display:flex;
+        flex-direction: column;
+    }
+    .navigation.active {
+        display: block;
+    }
+    .nav-li{
+        margin-bottom: 20px;
+    }
+    .first-li{
+        margin-top: 20px;
+    }
+    
