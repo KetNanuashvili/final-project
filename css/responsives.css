@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         max-width: 1000px;
         width: 90%;
-        padding-bottom: 50px;
+        padding-bottom: var(--important-fontsize);
     }
     .small-hover-div1{
         max-width: 30%;
@@ -80,10 +80,6 @@
     .room-div6{
         margin: 0 auto;
     }
-    .room-div6:nth-child(5){
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
     .six-room-divs{
         max-width: 60%
     }
@@ -106,10 +102,10 @@
     }
     .first-footer-div:nth-child(1),
     .first-footer-div:nth-child(2){
-        margin-bottom: 50px;
+        margin-bottom: var(--important-fontsize);
     }
     .first-footer-div:nth-child(5){
-        margin-top: 50px;
+        margin-top: var(--important-fontsize);
     }
     .grids-container{
         width: 90%;
@@ -135,7 +131,7 @@
 
 /* max width 768 px*/
 @media(max-width:768px){
-    /*burger bar */
+    /*navigation section*/
     .navigation{
         display: none;
     }
@@ -167,8 +163,9 @@
     .first-li{
         margin-top: 20px;
     }
+    /*inside div*/
     h1{
-        font-size: 50px;
+        font-size: var(--important-fontsize);
     }
     .two-divs{
         display: flex;
@@ -179,7 +176,7 @@
         margin-top: 30px;
     }
     .h2-services{
-        font-size: 50px;
+        font-size: var(--important-fontsize);
     }
     .six-hovers-div{
         display: flex;
@@ -187,7 +184,7 @@
         flex-wrap: wrap;
         max-width: 600px;
         width: 90%;
-        padding-bottom: 50px;
+        padding-bottom: var(--important-fontsize);
     }
     .small-hover-div1{
         max-width: 40%;
@@ -263,7 +260,7 @@
             font-size:13px;
         }
         h1{
-            margin-top: 50px;
+            margin-top: var(--important-fontsize);
         }
         .h2-services{
             font-size: 40px;
@@ -415,4 +412,3 @@
             padding:30px 0;
         }
     }
-}
