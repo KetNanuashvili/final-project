@@ -14,5 +14,5 @@ toggleButton.addEventListener('click', function(){
 
 document.getElementById('buttonclick').addEventListener('click', function()
 {
-    alert('your registration is success')
+    alert('Thank you for getting in touch!')
 })
