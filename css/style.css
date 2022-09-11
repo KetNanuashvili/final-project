@@ -712,6 +712,9 @@ h1{
 .input-form:focus{
     outline:none;
 }
+.textarea-form{
+    resize: none;
+}
 .submit{
    width: 120px;
    height: 45px;
