@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --main-color:#c5a880;
     --important-color2:#2F4F4F;
@@ -13,6 +20,7 @@
 body{
     background-color: #2F4F4F;
 }
+
 /*header*/
 .header-div{
     width: 100%;
@@ -34,6 +42,7 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            position: relative;
 }
 .main-logo{
     font-size: 40px;
@@ -82,8 +91,11 @@ body{
 /*burger bar*/
 .burger-bar{
     font-size: 35px;
+    top:10px;
+    right: 20px;
     color: var(--main-color);
     text-shadow: 2px 2px 2px gray;
+    position: absolute;
     display: none;
 }
 
@@ -1043,14 +1055,12 @@ h1{
     color:#999999;
     font-size: 16px;
 }
-/*copyright-section*/
-.copyright-section{
+/*copyright-div*/
+.copyright-div{
     background-color: black;
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.copyright-div{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

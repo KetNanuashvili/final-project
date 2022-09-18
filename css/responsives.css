@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*max width 1250 px*/
 @media(max-width:1250px){
     .first-section-div{
@@ -172,7 +179,6 @@
     }
     .burger-bar{
         display: block;
-        padding-top: 10px;
     }
     .nav-ul{
         -webkit-box-orient: vertical;
@@ -182,13 +188,6 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-    }
-    .navigation-div{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
     }
     .navigation-div.head {
         background-color: #222222;
@@ -201,6 +200,12 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .navigation{
+        margin-left: 0;
     }
     .navigation.active {
         display: block;
